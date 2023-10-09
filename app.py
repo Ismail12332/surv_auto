@@ -117,7 +117,6 @@ def home():
     return render_template("index2.html", projects=projects, user_id=user_id)
 
 
-
 #Переключение на проект в главное странице нажатие на имя проекта
 @app.route("/edit_project/<string:project_id>", methods=["GET"])
 def edit_project(project_id):
